@@ -6,24 +6,20 @@ import time
 # ============================================
 # ページ設定
 # ============================================
-# st.set_page_config(
-#     page_title="Streamlit デモ",
-#     layout="wide",
-#     initial_sidebar_state="expanded"
-# )
+st.set_page_config(
+    page_title="Streamlit デモ",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 # ============================================
 # タイトルと説明
 # ============================================
-st.title("Streamlit 初心者向けデモ")
-st.markdown("### コメントを解除しながらStreamlitの機能を学びましょう")
-st.markdown("このデモコードでは、コメントアウトされた部分を順番に解除しながらUIの変化を確認できます。")
+st.title("Streamlit 変更後")
+st.markdown("### コメントを解除してくれ")
+st.markdown("このデモコードでは、UIの変化を確認できるで～")
 
-# ============================================
-# サイドバー 
-# ============================================
-st.sidebar.header("デモのガイド")
-st.sidebar.info("コードのコメントを解除して、Streamlitのさまざまな機能を確認しましょう。")
+
 
 # ============================================
 # 基本的なUI要素
@@ -36,14 +32,14 @@ name = st.text_input("あなたの名前", "ゲスト")
 st.write(f"こんにちは、{name}さん！")
 
 # ボタン
-# st.subheader("ボタン")
-# if st.button("クリックしてください"):
-#     st.success("ボタンがクリックされました！")
+st.subheader("牡丹")
+ if st.button("クリックしてください"):
+     st.success("グッド！")
 
 # チェックボックス
-# st.subheader("チェックボックス")
-# if st.checkbox("チェックを入れると追加コンテンツが表示されます"):
-#     st.info("これは隠れたコンテンツです！")
+st.subheader("？ボックス")
+ if st.checkbox("チェックを入れると追加コンテンツが表示されます"):
+     st.info("ナイス！")
 
 # スライダー
 # st.subheader("スライダー")
@@ -61,25 +57,25 @@ st.write(f"こんにちは、{name}さん！")
 # ============================================
 # レイアウト
 # ============================================
-# st.header("レイアウト")
+st.header("レイアウト")
 
 # カラム
-# st.subheader("カラムレイアウト")
-# col1, col2 = st.columns(2)
-# with col1:
-#     st.write("これは左カラムです")
-#     st.number_input("数値を入力", value=10)
-# with col2:
-#     st.write("これは右カラムです")
-#     st.metric("メトリクス", "42", "2%")
+st.subheader("カラムレイアウト")
+col1, col2 = st.columns(2)
+with col1:
+    st.write("これは左カラムです")
+    st.number_input("数値を入力", value=10)
+with col2:
+    st.write("これは右カラムです")
+    st.metric("メトリクス", "42", "2%")
 
 # タブ
-# st.subheader("タブ")
-# tab1, tab2 = st.tabs(["第1タブ", "第2タブ"])
-# with tab1:
-#     st.write("これは第1タブの内容です")
-# with tab2:
-#     st.write("これは第2タブの内容です")
+st.subheader("タブ")
+tab1, tab2 = st.tabs(["第1タブ", "第2タブ"])
+with tab1:
+    st.write("これは第1タブの内容です")
+with tab2:
+    st.write("これは第2タブの内容です")
 
 # エクスパンダー
 # st.subheader("エクスパンダー")
